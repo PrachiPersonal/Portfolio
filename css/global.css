@@ -16,6 +16,10 @@ body {
     "Noto Color Emoji";
 }
 
+#top-nav-bar-container {
+    display: block;
+}
+
 #side-nav-bar-container {
     display: none;
 }
@@ -122,6 +126,6 @@ body {
     }
 
     #side-nav-bar-container {
-        display: block;
+        display: inline-block;
     }
 }
