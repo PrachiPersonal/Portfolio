@@ -1,3 +1,9 @@
+$(document).ready(function (){
+    $("#pageHeader").empty();
+    $('.navbar-collapse').collapse('hide');
+    $("#pageHeader").append(addAboutMePage())
+})
+
 $(".toggle-btn").click(function () {
     let lightColor = '#6edebe';
     let darkColor = '#2f3f5a';
@@ -57,7 +63,7 @@ function addAboutMePageHeader(){
     let aboutMePageHeader =
         `<div id="aboutMePageHeader" class="pageHeader col-12 px-0">
                 <div class="d-inline-block">
-                    <div class="p-5 mb-4 rounded-3">
+                    <div class="p-3 p-sm-5 p-md-5 rounded-3">
                         <div class="container-fluid py-3 text-center">
                             <h4 class="display-5 fw-bold ">Full Stack Developer</h4>
                             <p class=" text-center">I am a software engineer specialised in frontend and backend
@@ -80,7 +86,7 @@ function addPortfolioPageHeader(){
     let portfolioPageHeader =
         `<div id="portfolioPageHeader" class="pageHeader col-12 px-0">
                 <div class="d-inline-block">
-                    <div class="p-5 mb-4 rounded-3">
+                    <div class="p-3 p-md-5 mb-4 rounded-3">
                         <div class="container-fluid py-3 text-center">
                             <h4 class="display-5 fw-bold ">Portfolio</h4>
                             <p class=" text-center">Welcome to my online portfolio. Check out my projects.
@@ -103,8 +109,8 @@ function addBlogsPageHeader(){
     let blogsPageHeader =
         `<div id="blogPageHeader" class="pageHeader col-12 px-0">
                 <div class="d-inline-block">
-                    <div class="p-5 mb-4  rounded-3">
-                        <div class="container-fluid py-3 text-center">
+                    <div class="px-0 py-5 px-sm-3 p-md-5 mb-4  rounded-3">
+                        <div class="container-fluid px-0 p-md-1 py-3 text-center">
                             <h4 class="display-5 fw-bold">Becoming Software Developer</h4>
                             <p class=" text-center">Welcome to my blogs. If you are looking for project code,
                                 designs,
@@ -133,7 +139,7 @@ function addContactMePageHeader(){
     let contactMePageHeader =
         `<div id="contactPageHeader" class="pageHeader col-12 px-0">
                 <div class="d-inline-block">
-                    <div class="p-5 mb-4 rounded-3">
+                    <div class="p-3 p-md-5 mb-4 rounded-3">
                         <div class="container-fluid py-3 text-center">
                             <h4 class="display-5 fw-bold ">Contact Me</h4>
                             <p class=" text-center">Interested in hiring me for your project or just want to say hi?
