@@ -14,8 +14,8 @@
 
     </head>
     <body>
-        <div id="main-container">
-            <div id="top-nav-bar-container">
+        <div id="main-container" class="row mx-0">
+            <div id="top-nav-bar-container" class="col-12 px-0">
                 <nav class="navbar navbar-expand-lg navbar-light nav-color">
                     <a class="navbar-brand text-white" href="#">Prachi Phatak</a>
                     <button id="menuBtn" class="navbar-toggler" type="button" data-toggle="collapse"
@@ -23,7 +23,6 @@
                             aria-expanded="false" aria-label="Toggle navigation">
                         <i class="bi bi-list"></i>
                     </button>
-
                     <div id="navbarSupportedContent" class="collapse navbar-collapse">
                         <div id="navbar-profile-container" class="my-4">
                             <div class="text-center sidenav-wrapper-img">
@@ -39,7 +38,6 @@
                                 <i class="bi-slack social-icon"></i>
                                 <i class="bi-skype social-icon"></i>
                             </div>
-
                         </div>
                         <hr class="bg-white">
                         <div class="my-2 text-center">
@@ -70,7 +68,7 @@
 
                 </nav>
             </div>
-            <div id="side-nav-bar-container">
+            <div id="side-nav-bar-container" class="col-3 pt-3">
                 <div class="side-nav-bar container text-center">
                     <a class="navbar-brand text-white" href="#">Prachi Phatak</a>
                 </div>
@@ -88,7 +86,6 @@
                         <i class="bi-slack social-icon"></i>
                         <i class="bi-skype social-icon"></i>
                     </div>
-
                 </div>
                 <hr class="bg-white">
                 <div class="my-2 text-center">
@@ -109,17 +106,76 @@
                     <a type="button" class="hire-me link-text btn-lg my-3">Hire Me!</a>
                 </div>
                 <hr class="bg-white">
-                <div class="sidenav-darkMode-header text-center">
+                <div class="sidenav-darkMode-header text-center text-white ">
                     Dark Mode
                     <div class="toggle-btn">
                         <div class="inner-circle"></div>
                     </div>
                 </div>
-
             </div>
-
+            <div id="aboutMePageHeader" class="pageHeader col-12 col-lg-9 d-none px-0">
+                <div class="d-inline-block">
+                    <div class="p-5 mb-4 bg-light rounded-3">
+                        <div class="container-fluid py-3 text-center">
+                            <h4 class="display-5 fw-bold ">Full Stack Developer</h4>
+                            <p class=" text-center">I am a software engineer specialised in frontend and backend
+                                development for web applications.
+                                Want to know how I may help your project? Check out my project portfolio.</p>
+                            <a type="button" class="pageHeader-hire-me link-text btn-lg my-3">View Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="portfolioPageHeader" class="pageHeader col-12 col-lg-9 d-none px-0">
+                <div class="d-inline-block">
+                    <div class="p-5 mb-4 bg-light rounded-3">
+                        <div class="container-fluid py-3 text-center">
+                            <h4 class="display-5 fw-bold ">Portfolio</h4>
+                            <p class=" text-center">Welcome to my online portfolio. Check out my projects.
+                                I'm taking on freelance work at the moment. Want some help building new projects?</p>
+                            <a type="button" class="pageHeader-hire-me link-text btn-lg my-3">Hire Me!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="blogPageHeader" class="pageHeader col-12 col-lg-9 d-none px-0">
+                <div class="d-inline-block">
+                    <div class="p-1 p-md-5 p-md-1 mb-4 bg-light rounded-3">
+                        <div class="container-fluid py-3 text-center">
+                            <h4 class="display-5 fw-bold">Becoming Software Developer</h4>
+                            <p class=" text-center">Welcome to my blogs. If you are looking for project code, designs,
+                                fun challenges, then subscribe and get the latest blogs in your inbox.
+                            </p>
+                            <p>
+                            <form action="">
+                                <input class="enterEmailTextBox" type="text" size="30" placeholder="Enter email"
+                                       required>
+                                <button type="submit" class="pageHeader-hire-me link-text btn my-3">Subscribe
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contactPageHeader" class="pageHeader col-12 col-lg-9 d-inline px-0">
+                <div class="d-inline-block">
+                    <div class="p-5 mb-4 bg-light rounded-3">
+                        <div class="container-fluid py-3 text-center">
+                            <h4 class="display-5 fw-bold ">Contact Me</h4>
+                            <p class=" text-center">Interested in hiring me for your project or just want to say hi? You
+                                can fill in the form below.
+                                Follow me on the social channels below.</p>
+                            <div id="contactPageHeader-social-container" class="text-center">
+                                <i class="bi-github social-icon "></i>
+                                <i class="bi-linkedin social-icon "></i>
+                                <i class="bi-slack social-icon"></i>
+                                <i class="bi-skype social-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
         <script src="https://code.jquery.com/jquery-3.6.0.js"
                 integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"

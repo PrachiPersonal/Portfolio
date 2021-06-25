@@ -81,6 +81,10 @@ body {
     background-color: var(--secondary-color);
 }
 
+.pageHeader-hire-me {
+    background-color: var(--social-image);
+}
+
 /*   DARK MODE   */
 .toggle-btn {
     width: 60px;
