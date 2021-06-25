@@ -16,6 +16,10 @@ body {
     "Noto Color Emoji";
 }
 
+a{
+    color: var(--social-image);
+}
+
 #top-nav-bar-container {
     display: block;
 }
@@ -118,7 +122,7 @@ body {
 
 /*  side-nav-bar */
 #side-nav-bar-container {
-    height: 100vw;
+    /*height: 100vw;*/
     width: 250px;
     background-color: var(--main-color);
 }
@@ -127,6 +131,15 @@ body {
 .pageHeader{
     background-color: var(--page-header-color);
 }
+
+/*  Page content*/
+
+.cardText{
+    font-size: 0.8rem;
+}
+
+/*  Portfolio content   */
+
 
 /*  Media screen breakpoints  */
 @media screen and (min-width: 769px) {
