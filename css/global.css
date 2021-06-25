@@ -6,7 +6,7 @@
     --active-link: lightslategray;
     --secondary-color: rgba(0, 0, 0, 0.1);
 
-    --dark-main-color: #2f3f5a;
+    --page-header-color: #f8f9fa;
     /*background-color: rgb(32, 44, 66);*/
 }
 
@@ -121,6 +121,11 @@ body {
     height: 100vw;
     width: 250px;
     background-color: var(--main-color);
+}
+
+/*  Page headers*/
+.pageHeader{
+    background-color: var(--page-header-color);
 }
 
 /*  Media screen breakpoints  */

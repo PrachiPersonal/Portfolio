@@ -1,14 +1,21 @@
 $(".toggle-btn").click(function () {
     let lightColor = '#6edebe';
     let darkColor = '#2f3f5a';
+    let lightPageHeader = '#f8f9fa';
+    let darkPageColor = '#384458';
+    // let darkPageTextColor = 'white';
     let mutedColor = 'rgba(0, 0, 0, 0.1)';
     if (document.body.style.getPropertyValue('--main-color') === darkColor) {
         document.body.style.setProperty('--main-color', lightColor);
         document.body.style.setProperty('--secondary-color', mutedColor);
+        document.body.style.setProperty('--page-header-color', lightPageHeader )
+        $(".pageHeader").css('color','black');
 
     } else {
         document.body.style.setProperty('--main-color', darkColor);
         document.body.style.setProperty('--secondary-color', lightColor);
+        document.body.style.setProperty('--page-header-color', darkPageColor )
+        $(".pageHeader").css('color','white');
     }
 
     $(this).toggleClass("active")
@@ -50,7 +57,7 @@ function addAboutMePageHeader(){
     let aboutMePageHeader =
         `<div id="aboutMePageHeader" class="pageHeader col-12 px-0">
                 <div class="d-inline-block">
-                    <div class="p-5 mb-4 bg-light rounded-3">
+                    <div class="p-5 mb-4 rounded-3">
                         <div class="container-fluid py-3 text-center">
                             <h4 class="display-5 fw-bold ">Full Stack Developer</h4>
                             <p class=" text-center">I am a software engineer specialised in frontend and backend
@@ -73,7 +80,7 @@ function addPortfolioPageHeader(){
     let portfolioPageHeader =
         `<div id="portfolioPageHeader" class="pageHeader col-12 px-0">
                 <div class="d-inline-block">
-                    <div class="p-5 mb-4 bg-light rounded-3">
+                    <div class="p-5 mb-4 rounded-3">
                         <div class="container-fluid py-3 text-center">
                             <h4 class="display-5 fw-bold ">Portfolio</h4>
                             <p class=" text-center">Welcome to my online portfolio. Check out my projects.
@@ -96,7 +103,7 @@ function addBlogsPageHeader(){
     let blogsPageHeader =
         `<div id="blogPageHeader" class="pageHeader col-12 px-0">
                 <div class="d-inline-block">
-                    <div class="p-5 p-md-5 p-md-1 mb-4  rounded-3">
+                    <div class="p-5 mb-4  rounded-3">
                         <div class="container-fluid py-3 text-center">
                             <h4 class="display-5 fw-bold">Becoming Software Developer</h4>
                             <p class=" text-center">Welcome to my blogs. If you are looking for project code,
@@ -126,7 +133,7 @@ function addContactMePageHeader(){
     let contactMePageHeader =
         `<div id="contactPageHeader" class="pageHeader col-12 px-0">
                 <div class="d-inline-block">
-                    <div class="p-5 mb-4 bg-light rounded-3">
+                    <div class="p-5 mb-4 rounded-3">
                         <div class="container-fluid py-3 text-center">
                             <h4 class="display-5 fw-bold ">Contact Me</h4>
                             <p class=" text-center">Interested in hiring me for your project or just want to say hi?
