@@ -34,6 +34,14 @@ $(this).click(function () {
     $('.navbar-collapse').collapse('hide');
 })
 
+$(".hire-me").click(function (){
+    $("#pageHeader").empty();
+    $("#pageHeader").append(addContactMePageHeader());
+
+    $("#pageContent").empty();
+    $("#pageContent").append(addContactMePageContent());
+})
+
 $(".showAboutMe").click(function () {
     $("#pageHeader").empty();
     $("#pageHeader").append(addAboutMePageHeader());
@@ -91,8 +99,9 @@ function addAboutMePageContent() {
                             <div class="card-body ">
                                 <h5 class="card-title">What I do</h5>
                                 <p class="card-text">I have more than 6 years' experience building and maintaining
-                                    software. Below is overview of my skill sets and technologies I use. Checkout my
-                                    <a href="#"> resume</a> and<a href="#"> project portfolio</a>.
+                                    software. Below is overview of my skill sets and technologies I use.
+                                    <!-- Checkout my-->
+                                    <!--<a href="#"> resume</a> and <span id="portfolioLink"> project portfolio</span>.-->
                                 </p>
                             </div>
                         </div>
@@ -330,10 +339,10 @@ function addContactMePageHeader() {
                                 can fill in the form below.
                                 Follow me on the social channels below.</p>
                             <div id="contactPageHeader-social-container" class="text-center">
-                                <i class="bi-github social-icon "></i>
-                                <i class="bi-linkedin social-icon "></i>
-                                <i class="bi-slack social-icon"></i>
-                                <i class="bi-skype social-icon"></i>
+                                <a href="https://github.com/PrachiPhatak" class="bi-github social-icon "></a>
+                                <a href="https://www.linkedin.com/in/prachi-phatak-33a99215/" class="bi-linkedin social-icon "></a>
+                                <a href="https://a1marketing.slack.com" class="bi-slack social-icon"></a>
+                                <a href="skype:prachiphatak?chat" class="bi-skype social-icon"></a>
                             </div>
                         </div>
                     </div>
