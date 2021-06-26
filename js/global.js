@@ -34,6 +34,14 @@ $(this).click(function () {
     $('.navbar-collapse').collapse('hide');
 })
 
+$(".hire-me").click(function (){
+    $("#pageHeader").empty();
+    $("#pageHeader").append(addContactMePageHeader());
+
+    $("#pageContent").empty();
+    $("#pageContent").append(addContactMePageContent());
+})
+
 $(".showAboutMe").click(function () {
     $("#pageHeader").empty();
     $("#pageHeader").append(addAboutMePageHeader());
