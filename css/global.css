@@ -6,7 +6,7 @@
     --active-link: lightslategray;
     --secondary-color: rgba(0, 0, 0, 0.1);
 
-    --dark-main-color: #2f3f5a;
+    --page-header-color: #f8f9fa;
     /*background-color: rgb(32, 44, 66);*/
 }
 
@@ -14,6 +14,14 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
     "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
+}
+
+a{
+    color: var(--social-image);
+}
+
+#top-nav-bar-container {
+    display: block;
 }
 
 #side-nav-bar-container {
@@ -77,6 +85,10 @@ body {
     background-color: var(--secondary-color);
 }
 
+.pageHeader-hire-me {
+    background-color: var(--social-image);
+}
+
 /*   DARK MODE   */
 .toggle-btn {
     width: 60px;
@@ -110,9 +122,26 @@ body {
 
 /*  side-nav-bar */
 #side-nav-bar-container {
-    height: 100vw;
+    /*height: 100vw;*/
     width: 250px;
     background-color: var(--main-color);
+}
+
+/*  Page headers*/
+.pageHeader{
+    background-color: var(--page-header-color);
+}
+
+/*  Page content*/
+
+.cardText{
+    font-size: 0.8rem;
+}
+
+/*  Contact Me content   */
+.buttonColor{
+    background-color: var(--social-image);
+    color: var(--text-color);
 }
 
 /*  Media screen breakpoints  */
@@ -122,6 +151,6 @@ body {
     }
 
     #side-nav-bar-container {
-        display: block;
+        display: inline-block;
     }
 }
