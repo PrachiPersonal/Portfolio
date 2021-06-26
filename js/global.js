@@ -1,10 +1,10 @@
 $(document).ready(function () {
     $('.navbar-collapse').collapse('hide');
     $("#pageHeader").empty();
-    $("#pageHeader").append(addAboutMePageHeader());
+    $("#pageHeader").append(addPortfolioPageHeader());
 
     $("#pageContent").empty();
-    $("#pageContent").append(addAboutMePageContent());
+    $("#pageContent").append(addPortfolioPageContent());
 })
 
 $(".toggle-btn").click(function () {
@@ -34,7 +34,7 @@ $(this).click(function () {
     $('.navbar-collapse').collapse('hide');
 })
 
-$(".hire-me").click(function (){
+$(".hire-me").click(function () {
     $("#pageHeader").empty();
     $("#pageHeader").append(addContactMePageHeader());
 
@@ -108,7 +108,9 @@ function addAboutMePageContent() {
                         <div id="skillCardWrapper" class="col-12 row justify-content-center mx-0">
                             <div class="card shadow col-12 col-sm-5 col-md-5 col-lg-3 mx-md-1 bg-transparent mb-2">
                                 <div class="card-body cardText px-0 ">
-                                    <p><h6>JavaScript</h6><br>
+                                    <img src="assets/images/js.png"  class="img-thumbnail d-inline mb-2">
+                                    <h6 class="d-inline">JavaScript</h6>
+                                    <p class="d-inline"><br>
                                     JavaScript, abbreviated JS, is a high-level,
                                     interpreted computer programming language that can be executed within a web browser.
                                     The cool functionality of Dark Mode is in JS.
@@ -117,7 +119,9 @@ function addAboutMePageContent() {
                             </div>
                             <div class="card shadow col-12 col-sm-5 col-md-5 col-lg-3 mx-md-1 bg-transparent mb-2">
                                 <div class="card-body cardText px-0">
-                                    <p><h6>HTML5</h6><br>
+                                    <img src="assets/images/HTML5.png"  class="img-thumbnail d-inline mb-2">
+                                    <h6 class="d-inline">HTML5</h6>
+                                    <p class="d-inline"><br>
                                     HTML5 is a markup language used for structuring and presenting content on the World
                                     Wide Web. It is the fifth and last[3] major HTML version that is a World Wide Web
                                     Consortium (W3C) recommendation.
@@ -126,7 +130,9 @@ function addAboutMePageContent() {
                             </div>
                             <div class="card shadow col-12 col-sm-5 col-md-5 col-lg-3 mx-md-1 bg-transparent mb-2">
                                 <div class="card-body cardText px-0">
-                                    <p><h6>CSS3</h6><br>
+                                    <img src="assets/images/css3.png"  class="img-thumbnail d-inline mb-2">
+                                    <h6 class="d-inline">CSS3</h6>
+                                    <p class="d-inline"><br>
                                     CSS describes how HTML elements are to be displayed on screen, paper, or in other
                                     media. This is website uses CSS for all the styling.
                                     </p>
@@ -134,7 +140,9 @@ function addAboutMePageContent() {
                             </div>
                             <div class="card shadow col-12 col-sm-5 col-md-5 col-lg-3 mx-md-1 bg-transparent mb-2">
                                 <div class="card-body cardText px-0">
-                                    <p><h6>JAVA</h6><br>
+                                    <img src="assets/images/JAVA.png"  class="img-thumbnail d-inline mb-2">
+                                    <h6 class="d-inline">JAVA</h6>
+                                    <p class="d-inline"><br>
                                     Java is a high-level programming language developed by Sun Microsystems. The Java
                                     syntax is similar to C++, but is strictly an object-oriented programming language.
                                     </p>
@@ -142,7 +150,9 @@ function addAboutMePageContent() {
                             </div>
                             <div class="card shadow col-12 col-sm-5 col-md-5 col-lg-3 mx-md-1 bg-transparent mb-2">
                                 <div class="card-body cardText px-0">
-                                    <p><h6>SpringBoot</h6><br>
+                                    <img src="assets/images/spring.png"  class="img-thumbnail d-inline mb-2">
+                                    <h6 class="d-inline">SpringBoot</h6>
+                                    <p class="d-inline"><br>
                                     Spring Boot makes it easy to create stand-alone, production-grade Spring based
                                     Applications that you can "just run".
                                     </p>
@@ -150,7 +160,9 @@ function addAboutMePageContent() {
                             </div>
                             <div class="card shadow col-12 col-sm-5 col-md-5 col-lg-3 mx-md-1 bg-transparent mb-2">
                                 <div class="card-body cardText px-0">
-                                    <p><h6>Web Development</h6><br>
+                                    <img src="assets/images/webDev.png"  class="img-thumbnail d-inline mb-2">
+                                    <h6 class="d-inline">Web Development</h6>
+                                    <p class="d-inline"><br>
                                     Web application development is the creation of application programs that reside on
                                     remote servers and are delivered to the user's device over the Internet.
                                     </p>
@@ -158,7 +170,9 @@ function addAboutMePageContent() {
                             </div>
                             <div class="card shadow col-12 col-sm-5 col-md-5 col-lg-3 mx-md-1 bg-transparent mb-2">
                                 <div class="card-body cardText px-0">
-                                    <p><h6>Agile methodology</h6><br>
+                                    <img src="assets/images/agile.jpeg"  class="img-thumbnail d-inline mb-2">
+                                    <h6 class="d-inline">Agile methodology</h6>
+                                    <p class="d-inline"><br>
                                     Agile software development refers to methodologies, where requirements and solutions
                                     evolve through collaboration between self-organizing cross-functional teams.
                                     </p>
@@ -166,7 +180,9 @@ function addAboutMePageContent() {
                             </div>
                             <div class="card shadow col-12 col-sm-5 col-md-5 col-lg-3 mx-md-1 bg-transparent mb-2">
                                 <div class="card-body cardText px-0">
-                                    <p><h6>Jira</h6><br>
+                                    <img src="assets/images/Jira.jpeg"  class="img-thumbnail d-inline mb-2">
+                                    <h6 class="d-inline">Jira</h6>
+                                    <p class="d-inline"><br>
                                     Plan, track, and manage your agile and software development projects in Jira.
                                     Customize your workflow, collaborate, and release great software.
                                     </p>

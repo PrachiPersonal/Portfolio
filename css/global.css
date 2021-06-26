@@ -137,6 +137,11 @@ a{
 .cardText{
     font-size: 0.8rem;
 }
+/*  About me page content */
+.card-body > img{
+    height: 50px;
+    width: 50px;
+}
 
 /*  Contact Me content   */
 .buttonColor{
