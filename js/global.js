@@ -35,8 +35,6 @@ $(this).click(function () {
 })
 
 $(".showAboutMe").click(function () {
-    // $('.navbar-collapse').collapse('hide');
-
     $("#pageHeader").empty();
     $("#pageHeader").append(addAboutMePageHeader());
 
@@ -45,8 +43,6 @@ $(".showAboutMe").click(function () {
 })
 
 $(".showPortfolio").click(function () {
-    // $('.navbar-collapse').collapse('hide');
-
     $("#pageHeader").empty();
     $("#pageHeader").append(addPortfolioPageHeader());
 
@@ -55,8 +51,6 @@ $(".showPortfolio").click(function () {
 })
 
 $(".showBlogs").click(function () {
-    // $('.navbar-collapse').collapse('hide');
-
     $("#pageHeader").empty();
     $("#pageHeader").append(addBlogsPageHeader());
 
@@ -65,8 +59,6 @@ $(".showBlogs").click(function () {
 })
 
 $(".showContactMe").click(function () {
-    // $('.navbar-collapse').collapse('hide');
-
     $("#pageHeader").empty();
     $("#pageHeader").append(addContactMePageHeader());
 
@@ -74,10 +66,6 @@ $(".showContactMe").click(function () {
     $("#pageContent").append(addContactMePageContent());
 })
 
-// function addAboutMePage(){
-//     let aboutMePage = addAboutMePageHeader() ;
-//     return aboutMePage;
-// }
 function addAboutMePageHeader() {
     let aboutMePageHeader =
         `<div id="aboutMePageHeader" class="pageHeader col-12 px-0">
@@ -180,10 +168,6 @@ function addAboutMePageContent() {
     return aboutMePageContent;
 }
 
-// function addPortfolioPage(){
-//     let portfolioPage = addPortfolioPageHeader();
-//     return portfolioPage;
-// }
 function addPortfolioPageHeader() {
     let portfolioPageHeader =
         `<div id="portfolioPageHeader" class="pageHeader col-12 px-0">
@@ -254,7 +238,7 @@ function addPortfolioPageContent() {
                                 This project uses two external APIs - OpenWeatherMap and Mapbox. This application allows
                                 user to see weather at any place in the world by just clicking on Map.
                                 </p>
-                                <a href="#">Demo &rarr;</a><br>
+                                <a href="https://prachiphatak.github.io/Weather-Map/">Demo &rarr;</a><br>
                                 <a href="#">Read More &rarr;</a>
                             </div>
                         </div>
@@ -263,10 +247,6 @@ function addPortfolioPageContent() {
     return portfolioContent;
 }
 
-// function addBlogsPage(){
-//     let blogPage = addBlogsPageHeader();
-//     return blogPage;
-// }
 function addBlogsPageHeader() {
     let blogsPageHeader =
         `<div id="blogPageHeader" class="pageHeader col-12 px-0">
@@ -338,10 +318,6 @@ function addBlogsPageContent() {
     return blogsContent
 }
 
-// function addContactMePage(){
-//     let contactMePage = addContactMePageHeader();
-//     return contactMePage;
-// }
 function addContactMePageHeader() {
     let contactMePageHeader =
         `<div id="contactPageHeader" class="pageHeader col-12 px-0">
@@ -368,7 +344,7 @@ function addContactMePageHeader() {
 
 function addContactMePageContent() {
     let contactMePageContent =
-        `<div id="contactMePageContent" class="container-md">
+        `<div id="contactMePageContent" class="container">
                 <div id="contactMeWrapper" class="">
                     <form>
                         <form>
