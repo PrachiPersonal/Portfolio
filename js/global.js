@@ -64,6 +64,23 @@ $(".showBlogs").click(function () {
 
     $("#pageContent").empty();
     $("#pageContent").append(addBlogsPageContent());
+
+    $("#subscribe").click(function (event) {
+        let email = $(".enterEmailTextBox").val();
+        const url = `https://formspree.io/f/mwkaqvrp`;
+        const options = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(email)
+        };
+        fetch(url, options)
+            .then(response => response.json()
+            ).then(data => console.log(data))
+            /* Movie was created successfully */
+            .catch(error => console.error(error)); /* handle errors */
+    })
 })
 
 $(".showContactMe").click(function () {
@@ -72,6 +89,27 @@ $(".showContactMe").click(function () {
 
     $("#pageContent").empty();
     $("#pageContent").append(addContactMePageContent());
+
+    $("#send").click(function (event) {
+        let message = {
+            name: $(".name").val(),
+            email: $(".email").val(),
+            message: $(".message").val()
+        };
+        const url = `https://formspree.io/f/mwkaqvrp`;
+        const options = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(message)
+        };
+        fetch(url, options)
+            .then(response => response.json()
+            ).then(data => console.log(data))
+            /* Movie was created successfully */
+            .catch(error => console.error(error)); /* handle errors */
+    })
 })
 
 function addAboutMePageHeader() {
@@ -284,10 +322,10 @@ function addBlogsPageHeader() {
                                 fun challenges, then subscribe and get the latest blogs in your inbox.
                             </p>
                             <p>
-                            <form action="">
-                                <input class="enterEmailTextBox" type="text" size="30" placeholder="Enter email"
+                            <form action="https://formspree.io/f/mwkaqvrp"  method="POST">
+                                <input class="enterEmailTextBox" name="subscribeEmail" type="text" size="30" placeholder="Enter email"
                                        required>
-                                <button type="submit" class="pageHeader-hire-me link-text btn my-3">Subscribe
+                                <button id="subscribe" type="submit" class="pageHeader-hire-me link-text btn my-3">Subscribe
                                 </button>
                             </form>
                         </div>
@@ -370,24 +408,48 @@ function addContactMePageHeader() {
 function addContactMePageContent() {
     let contactMePageContent =
         `<div id="contactMePageContent" class="container">
-                <div id="contactMeWrapper" class="">
+                <div id="contactMeWrapper" class="d-none">
                     <form>
-                        <form>
-                            <div class="form-group">
-                                <input type="text" class="form-control mb-5" id="inputName" placeholder="Enter Name">
-                            </div>
-                            <div class="form-group my-3">
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email" aria-describedby="emailHelp">
-                                <small id="emailHelp" class="form-text text-muted"> We'll never share your email with anyone else.</small>
-                            </div>
-                            <div class="form-group form-check my-5">
-                                <input type="checkbox" class="form-check-input" id="sendCopyCheck">
-                                <label class="form-check-label" for="sendCopyCheck">Email copy</label>
-                            </div>
-                            <button type="submit" class="buttonColor btn btn-block my-3">Send</button>
-                        </form>
-
+                        <div class="form-group">
+                            <input type="text" class="form-control mb-5" id="inputName" placeholder="Enter Name">
+                        </div>
+                        <div class="form-group my-3">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email" aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted"> We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group form-check my-3">
+                            <input type="checkbox" class="form-check-input" id="sendCopyCheck">
+                            <label class="form-check-label" for="sendCopyCheck">Email copy</label>
+                        </div>
+                        <div class="form-group my-3">
+                            <textarea name="" id="messageTxtArea" cols="70" rows="20"></textarea>
+                        </div>
+                        <button type="submit" class="buttonColor btn btn-block my-3">Send</button>
                     </form>
+                </div>
+                <div class="card bg-transparent border-0">
+                    <div class="body">
+                        <div class="comment-form ">
+                            <form class="row" action="https://formspree.io/f/mwkaqvrp"  method="POST">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="name form-control" placeholder="Your Name" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" name="email" class="email form-control" placeholder="Email Address" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <textarea rows="4" name="message" class="message form-control no-resize" placeholder="Message" required></textarea>
+                                    </div>
+                                    <button id="send" type="submit" class="btn btn-block hire-me">Send</button>
+                                </div>                                
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>`;
     return contactMePageContent;
