@@ -133,14 +133,23 @@ a{
 }
 
 /*  Page content*/
-
 .cardText{
     font-size: 0.8rem;
 }
+
 /*  About me page content */
 .card-body > img{
     height: 50px;
     width: 50px;
+}
+
+/*  Resume */
+.resume-subHeader{
+    font-size: 0.7rem;
+}
+
+.headerColor{
+    color: var(--main-color);
 }
 
 /*  Contact Me content   */
