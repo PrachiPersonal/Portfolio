@@ -159,6 +159,9 @@ a{
     color: var(--text-color);
 }
 
+.body{
+    min-height: 100vh;
+}
 /*  Media screen breakpoints  */
 @media screen and (min-width: 769px) {
     #top-nav-bar-container {
