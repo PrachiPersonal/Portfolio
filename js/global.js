@@ -323,7 +323,7 @@ function addBlogsPageHeader() {
                             </p>
                             <p>
                             <form action="https://formspree.io/f/mwkaqvrp"  method="POST">
-                                <input class="enterEmailTextBox py-2" name="subscribeEmail" type="text" size="30" placeholder="Enter email"
+                                <input class="enterEmailTextBox py-2 pl-2 border" name="subscribeEmail" type="text" size="30" placeholder="Enter email"
                                        required>
                                 <button id="subscribe" type="submit" class="pageHeader-hire-me link-text btn my-3">Subscribe
                                 </button>
