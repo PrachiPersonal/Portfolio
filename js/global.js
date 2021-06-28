@@ -323,7 +323,7 @@ function addBlogsPageHeader() {
                             </p>
                             <p>
                             <form action="https://formspree.io/f/mwkaqvrp"  method="POST">
-                                <input class="enterEmailTextBox" name="subscribeEmail" type="text" size="30" placeholder="Enter email"
+                                <input class="enterEmailTextBox py-2" name="subscribeEmail" type="text" size="30" placeholder="Enter email"
                                        required>
                                 <button id="subscribe" type="submit" class="pageHeader-hire-me link-text btn my-3">Subscribe
                                 </button>
@@ -395,8 +395,6 @@ function addContactMePageHeader() {
                             <div id="contactPageHeader-social-container" class="text-center">
                                 <a href="https://github.com/PrachiPhatak" class="bi-github social-icon "></a>
                                 <a href="https://www.linkedin.com/in/prachi-phatak-33a99215/" class="bi-linkedin social-icon "></a>
-                                <a href="https://a1marketing.slack.com" class="bi-slack social-icon"></a>
-                                <a href="skype:prachiphatak?chat" class="bi-skype social-icon"></a>
                             </div>
                         </div>
                     </div>
