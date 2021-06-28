@@ -25,6 +25,7 @@ a{
 }
 
 #side-nav-bar-container {
+    min-height: 100vh;
     display: none;
 }
 

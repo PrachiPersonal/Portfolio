@@ -430,6 +430,6 @@ function addContactMePageContent() {
                     </div>
                 </div>
             </div>
-            </div>`;
+        </div>`;
     return contactMePageContent;
 }
