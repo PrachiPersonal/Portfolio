@@ -114,7 +114,7 @@ $(".showContactMe").click(function () {
 
 function addAboutMePageHeader() {
     let aboutMePageHeader =
-        `<div id="aboutMePageHeader" class="pageHeader col-12 px-0">
+        `<div id="aboutMePageHeader" class="pageHeader col-12 px-0 text-center">
                 <div class="d-inline-block">
                     <div class="p-3 p-sm-5 p-md-5 rounded-3">
                         <div class="container-fluid py-3 text-center">
@@ -233,7 +233,7 @@ function addAboutMePageContent() {
 
 function addPortfolioPageHeader() {
     let portfolioPageHeader =
-        `<div id="portfolioPageHeader" class="pageHeader col-12 px-0">
+        `<div id="portfolioPageHeader" class="pageHeader col-12 px-0 text-center">
                 <div class="d-inline-block">
                     <div class="p-3 p-md-5 mb-4 rounded-3">
                         <div class="container-fluid py-3 text-center">
@@ -312,7 +312,7 @@ function addPortfolioPageContent() {
 
 function addBlogsPageHeader() {
     let blogsPageHeader =
-        `<div id="blogPageHeader" class="pageHeader col-12 px-0">
+        `<div id="blogPageHeader" class="pageHeader col-12 px-0 text-center">
                 <div class="d-inline-block">
                     <div class="px-0 py-5 px-sm-3 p-md-5 mb-4  rounded-3">
                         <div class="container-fluid px-0 p-md-1 py-3 text-center">
@@ -323,7 +323,7 @@ function addBlogsPageHeader() {
                             </p>
                             <p>
                             <form action="https://formspree.io/f/mwkaqvrp"  method="POST">
-                                <input class="enterEmailTextBox py-2" name="subscribeEmail" type="text" size="30" placeholder="Enter email"
+                                <input class="enterEmailTextBox py-2 pl-2 border" name="subscribeEmail" type="text" size="30" placeholder="Enter email"
                                        required>
                                 <button id="subscribe" type="submit" class="pageHeader-hire-me link-text btn my-3">Subscribe
                                 </button>
@@ -383,7 +383,7 @@ function addBlogsPageContent() {
 
 function addContactMePageHeader() {
     let contactMePageHeader =
-        `<div id="contactPageHeader" class="pageHeader col-12 px-0">
+        `<div id="contactPageHeader" class="pageHeader col-12 px-0 text-center">
                 <div class="d-inline-block">
                     <div class="p-3 p-md-5 mb-4 rounded-3">
                         <div class="container-fluid py-3 text-center">
