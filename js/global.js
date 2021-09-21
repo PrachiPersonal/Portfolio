@@ -8,7 +8,7 @@ $(document).ready(function () {
 })
 
 $(".toggle-btn").click(function () {
-    let lightColor = '#6edebe';
+    let lightColor = '#5FCB71';
     let darkColor = '#2f3f5a';
     let lightPageHeader = '#f8f9fa';
     let darkPageColor = '#384458';
@@ -65,7 +65,7 @@ $(".showBlogs").click(function () {
     $("#pageContent").empty();
     $("#pageContent").append(addBlogsPageContent());
 
-    $("#subscribe").click(function (event) {
+    $("#subscribe").click(function () {
         let email = $(".enterEmailTextBox").val();
         const url = `https://formspree.io/f/mwkaqvrp`;
         const options = {
@@ -90,7 +90,7 @@ $(".showContactMe").click(function () {
     $("#pageContent").empty();
     $("#pageContent").append(addContactMePageContent());
 
-    $("#send").click(function (event) {
+    $("#send").click(function () {
         let message = {
             name: $(".name").val(),
             email: $(".email").val(),
@@ -241,7 +241,7 @@ function addPortfolioPageHeader() {
                             <p class=" text-center">Welcome to my online portfolio. Check out my projects.
                                 I'm taking on freelance work at the moment. Want some help building new
                                 projects?</p>
-                            <a type="button" class="pageHeader-hire-me link-text btn-lg my-3">Hire Me!</a>
+                            <a type="button" class="hire-me pageHeader-hire-me link-text btn-lg my-3">Hire Me!</a>
                         </div>
                     </div>
                 </div>
@@ -259,16 +259,36 @@ function addPortfolioPageContent() {
                         <a href="#">External API</a>
                     </div>
                     <div id="projectWrapper" class="col-12 row justify-content-center mx-0">
-
-                        <div class="card shadow col-12 col-sm-5 col-md-5 col-lg-3 mx-sm-1 mx-md-1 bg-transparent mb-2">
-                            <img src="assets/images/designProject.jpg" class="card-img-top mt-3" alt="...">
+                    <div class="card shadow col-12 col-sm-5 col-md-5 col-lg-3 mx-sm-1 mx-md-1 bg-transparent mb-2">
+                            <img src="assets/images/devsplash_0.png" class="card-img-top mt-3" alt="...">
                             <div class="card-body cardText px-0 ">
-                                <p><h6>Design Project</h6><br>
-                                This is a team design project with Mobile first approach. We used media queries to
-                                change the layout based on the screen size.
+                                <p><br><h6>Devsplash</h6><br>
+                                This application allows 
+                                developers to find other developers and collaborate. This responsive project uses 
+                                Javascript, CSS, HTML5, JAVA, Springboot, Hibernate, and OAuth.
                                 </p>
-                                <a href="https://demetrio-corey-prachi.github.io/codeup-design-project/">Demo &rarr;</a><br>
-                                <a href="#">Read More &rarr;</a>
+                                <a href="https://devsplash.io/">Demo
+                                    &rarr;</a><br>
+                            </div>
+                        </div>
+                        <div class="card shadow col-12 col-sm-5 col-md-5 col-lg-3 mx-sm-1 mx-md-1 bg-transparent mb-2">
+                            <img src="assets/images/WeatherMapProject.gif" class="card-img-top mt-3" alt="...">
+                            <div class="card-body cardText px-0 ">
+                                <p><br><h6>Weather Map</h6>
+                                This project uses two external APIs - OpenWeatherMap and Mapbox. This application allows
+                                user to see weather at any place in the world by just clicking on Map.
+                                </p>
+                                <a href="https://prachiphatak.github.io/Weather-Map/">Demo &rarr;</a><br>
+                            </div>
+                        </div>
+                        <div class="card shadow col-12 col-sm-5 col-md-5 col-lg-3 mx-sm-1 mx-md-1 bg-transparent mb-2">
+                            <img src="assets/images/movieProject.jpeg" class="card-img-top mt-3" alt="...">
+                            <div class="card-body cardText px-0 ">
+                                <p><h6>Movie Project</h6><br>
+                                This is a single-page application team project. It allows users to add, edit, and
+                                delete movies, as well as rate them.
+                                </p><br>
+                                <a href="https://diamond-prachi.github.io/movie_project/">Demo &rarr;</a><br>
                             </div>
                         </div>
                         <div class="card shadow col-12 col-sm-5 col-md-5 col-lg-3 mx-sm-1 mx-md-1 bg-transparent mb-2">
@@ -280,31 +300,31 @@ function addPortfolioPageContent() {
                                 </p><br>
                                 <a href="https://christopher-prachi-richard.github.io/coffee-project/">Demo
                                     &rarr;</a><br>
-                                <a href="#">Read More &rarr;</a>
                             </div>
                         </div>
                         <div class="card shadow col-12 col-sm-5 col-md-5 col-lg-3 mx-sm-1 mx-md-1 bg-transparent mb-2">
-                            <img src="assets/images/movieProject.jpeg" class="card-img-top mt-3" alt="...">
+                            <img src="assets/images/designProject.jpg" class="card-img-top mt-3" alt="...">
                             <div class="card-body cardText px-0 ">
-                                <p><h6>Movie Project</h6><br>
-                                This is a single-page application team project. It allows users to add, edit, and
-                                delete movies, as well as rate them.
-                                </p><br>
-                                <a href="https://diamond-prachi.github.io/movie_project/">Demo &rarr;</a><br>
-                                <a href="#">Read More &rarr;</a>
-                            </div>
-                        </div>
-                        <div class="card shadow col-12 col-sm-5 col-md-5 col-lg-3 mx-sm-1 mx-md-1 bg-transparent mb-2">
-                            <img src="assets/images/WeatherMapProject.gif" class="card-img-top mt-3" alt="...">
-                            <div class="card-body cardText px-0 ">
-                                <p><br><h6>Weather Map</h6>
-                                This project uses two external APIs - OpenWeatherMap and Mapbox. This application allows
-                                user to see weather at any place in the world by just clicking on Map.
+                                <p><h6>Design Project</h6><br>
+                                This is a team design project with Mobile first approach. We used media queries to
+                                change the layout based on the screen size.
                                 </p>
-                                <a href="https://prachiphatak.github.io/Weather-Map/">Demo &rarr;</a><br>
-                                <a href="#">Read More &rarr;</a>
+                                <a href="https://demetrio-corey-prachi.github.io/codeup-design-project/">Demo &rarr;</a><br>
                             </div>
                         </div>
+                        <div class="card shadow col-12 col-sm-5 col-md-5 col-lg-3 mx-sm-1 mx-md-1 bg-transparent mb-2">
+                            <img src="assets/images/blog.jpg" class="card-img-top mt-3" alt="...">
+                            <div class="card-body cardText px-0 ">
+                                <p><br><h6>Blog App</h6><br>
+                                This application allows members to create, edit delete and publish blogs. This 
+                                responsive project uses Javascript, CSS, HTML5, JAVA, Springboot, Hibernate, and OAuth.
+                                </p><br>
+                                <a href="https://github.com/PrachiPhatak/blogapp">Project Dir
+                                    &rarr;</a><br>
+                            </div>
+                        </div>
+                        
+                        
                     </div>
                 </div>`;
     return portfolioContent;
